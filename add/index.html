@@ -11,8 +11,10 @@ small{color:#8c8c92}</style></head><body><main>
 <div class="code" id="code">······</div>
 <a class="btn cta" id="open" href="#">Uygulamada aç</a>
 <a class="btn ghost" href="https://apps.apple.com/app/id6831534987">App Store'dan indir</a>
-<small>Uygulamada Arkadaşlar → Arkadaş ekle'ye bu kodu yaz.</small>
+<small>Uygulamada Arkadaşlar → Arkadaş ekle'ye bu kullanıcı adını yaz.</small>
 </main><script>
-var c=(new URLSearchParams(location.search).get('c')||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);
-if(c){document.getElementById('code').textContent=c;document.getElementById('open').href='memorytape://add/'+c;}
+var raw=(new URLSearchParams(location.search).get('c')||'');
+var isName=raw!==raw.toUpperCase()||/[._]/.test(raw);
+var c=isName?raw.toLowerCase().replace(/[^a-z0-9._]/g,'').slice(0,20):raw.toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);
+if(c){document.getElementById('code').textContent=isName?'@'+c:c;document.getElementById('open').href='memorytape://add/'+encodeURIComponent(c);}
 </script></body></html>
