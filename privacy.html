@@ -13,7 +13,11 @@
 <h2>What is stored in iCloud (CloudKit public database)</h2>
 <ul><li>Your chosen display name, a random invite code, your public encryption key and your iCloud user identifier (an app-specific random ID, not your Apple ID email).</li>
 <li>Friend links (which user added which user) and, for each tape you send, the sender and recipient identifiers and the tape type. The photo, sound, songs and title are end-to-end encrypted.</li>
+<li>Reactions you leave on a friend's tape (your name and the emoji) are stored unencrypted so the notification can be shown.</li>
+<li>Records in the public database (profile, invite code, friend links, sent-tape metadata, reactions) can technically be read by other iCloud users who know your identifier; the content of tapes is always encrypted.</li>
 <li>Retention: sent tapes stay until you delete your data. <strong>Settings → Delete my data</strong> removes your profile, invite code, friend links and the tapes you sent, plus everything on your device.</li></ul>
+<h2>iCloud backup</h2><p>If backup is on (default), your shelf (including tapes friends sent you) is copied to <strong>your own private iCloud database</strong>. Only you can access it; we cannot. Turn it off or delete it in Settings.</p>
+<h2>Camera</h2><p>For the daily moment the app takes the back photo and then, right after, a selfie with the front camera (BeReal-style). You can remove the selfie before saving.</p>
 <h2>Microphone</h2><p>If you turn on "Sound of the moment", the app records 10 seconds of audio after you take a photo. It is stored on your device and only sent (encrypted) to friends you choose.</p>
 <h2>Songs</h2>
 <p>When you search for a song, your search text is sent to Apple's public iTunes Search API to find matching tracks and 30-second previews.</p>
@@ -31,7 +35,10 @@
 <p>Çektiğin ya da seçtiğin fotoğraflar ve onlardan oluşan kayıtlar <strong>yalnızca cihazında</strong> saklanır. Kamera ve fotoğraf arşivi erişimi yalnızca fotoğraf çektiğinde, seçtiğinde ya da kaydetmek istediğin bir görseli kaydederken kullanılır.</p>
 <h2>Arkadaşlar ve gönderim</h2>
 <p>Arkadaş özellikleri Apple iCloud (CloudKit) altyapısını kullanır. Arkadaşlarının seni bulabilmesi için <strong>seçtiğin isim</strong>, rastgele bir davet kodu ve açık şifreleme anahtarından oluşan bir profil saklanır. Bir kayıt gönderdiğinde fotoğraf ve detayları <strong>cihazında uçtan uca şifrelenir</strong>; Apple sunucularında yalnızca şifreli veri ile bildirim için gereken gönderen adı ve kayıt türü bulunur. Kayıtlarını biz okuyamayız.</p>
-<h2>iCloud'da (CloudKit) saklananlar</h2><ul><li>Seçtiğin isim, rastgele davet kodu, açık şifreleme anahtarın ve uygulamaya özel iCloud kullanıcı kimliğin (Apple ID e-postan değil).</li><li>Arkadaşlık bağlantıları ve gönderdiğin her kayıt için gönderen/alıcı kimlikleri ile kayıt türü. Fotoğraf, ses, şarkılar ve başlık uçtan uca şifrelidir.</li><li><strong>Ayarlar → Verilerimi sil</strong> profilini, kodunu, bağlantılarını ve gönderdiğin kayıtları siler.</li></ul>
+<h2>iCloud'da (CloudKit) saklananlar</h2><ul><li>Seçtiğin isim, rastgele davet kodu, açık şifreleme anahtarın ve uygulamaya özel iCloud kullanıcı kimliğin (Apple ID e-postan değil).</li><li>Arkadaşlık bağlantıları ve gönderdiğin her kayıt için gönderen/alıcı kimlikleri ile kayıt türü. Fotoğraf, ses, şarkılar ve başlık uçtan uca şifrelidir.</li><li>Arkadaşının kaydına bıraktığın tepkiler (adın ve emoji) bildirim gösterilebilsin diye şifresiz saklanır.</li>
+<li>Saklama süresi: verilerini silene kadar. <strong>Ayarlar → Verilerimi sil</strong> profilini, kodunu, bağlantılarını, tepkilerini, gönderdiğin kayıtları ve iCloud yedeğini siler.</li></ul>
+<h2>iCloud yedeği</h2><p>Yedekleme açıksa (varsayılan) rafın, sadece senin erişebildiğin özel iCloud alanına kopyalanır; biz erişemeyiz.</p>
+<h2>Kamera</h2><p>Günün kaydında arka fotoğraftan hemen sonra ön kamerayla bir selfie çekilir; kaydetmeden önce kaldırabilirsin.</p>
 <h2>Mikrofon</h2><p>"Anın sesi" açıksa fotoğraftan sonra 10 saniye ses kaydedilir; cihazında saklanır, sadece seçtiğin arkadaşlara şifreli gider.</p>
 <h2>Şarkılar</h2>
 <p>Şarkı aradığında arama metnin, eşleşen şarkıları ve 30 saniyelik önizlemeleri bulmak için Apple'ın iTunes Search API'sine gönderilir.</p>
