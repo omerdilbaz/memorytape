@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MemoryTape'te beni ekle</title>
+<meta property="og:title" content="MemoryTape'te beni ekle"><meta property="og:description" content="Birbirimize CD, plak ve kaset gönderelim.">
+<style>body{margin:0;background:#0d0d0e;color:#f4f4f5;font-family:-apple-system,system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
+main{padding:32px 24px;max-width:420px}h1{font-size:30px;margin:0 0 8px;font-weight:800}.irid{background:linear-gradient(90deg,#eef0f4,#d8ccf6 35%,#cfe7f3 62%,#f4e8c8 85%,#eef0f4);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{color:#a6a6ad;line-height:1.5}.code{font:800 40px ui-monospace,Menlo,monospace;letter-spacing:6px;margin:22px 0;padding:18px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
+a.btn{display:block;margin:12px 0;padding:16px;border-radius:26px;font-weight:700;text-decoration:none}.cta{background:linear-gradient(90deg,#eef0f4,#d8ccf6 35%,#cfe7f3 62%,#f4e8c8 85%,#eef0f4);color:#141416}.ghost{border:1.5px solid rgba(255,255,255,.7);color:#f4f4f5}
+small{color:#8c8c92}</style></head><body><main>
+<h1>MemoryTape'te<br><span class="irid">beni ekle</span></h1>
+<p>Birbirimize anılardan yapılmış CD, plak ve kaset gönderelim. Gönderilen kayıt ana ekran widget'ına düşer.</p>
+<div class="code" id="code">······</div>
+<a class="btn cta" id="open" href="#">Uygulamada aç</a>
+<a class="btn ghost" href="https://apps.apple.com/app/id6831534987">App Store'dan indir</a>
+<small>Uygulamada Arkadaşlar → Arkadaş ekle'ye bu kodu yaz.</small>
+</main><script>
+var c=(new URLSearchParams(location.search).get('c')||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);
+if(c){document.getElementById('code').textContent=c;document.getElementById('open').href='memorytape://add/'+c;}
+</script></body></html>
